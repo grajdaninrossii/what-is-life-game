@@ -3,57 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			Опушка
-		</title>
-	
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>
+		Опушка
+	</title>
+
 </head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"> <b> Опушка </b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp;Вы вышли на опушку и рассматриваете местность. Вокруг по пояс травы, возможно здесь водятся змеи подумали вы. Также вас смутила тишина, внезапно обрушившаяся на ваши уши. И вдруг крик. "Папа, папа, спаси!"
-			<br>
-			&nbsp;Вы видите своего сына возле стога сена. Его окружила стая волков, во главе с одноглазым, малость поседевшим, но очень свирепым волком. 
-			<div align = "middle">
-				<img src = "./image/wolfs.jpg" height = "40%" width = "37%" title="Стая волков, это тебе не шутки!"></img> </div>
-			<br>
-		
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-				&nbsp;&nbsp;&nbsp;
-				<font size = "4">
-			    <ol>
-				
-					<li> 
-						<a href = "./wolf_help.html"> Попытаться спасти сына </a>
-					</li>
-					
-					<li>
-						<a href = "./wolf_running.html"> Бежать </a>
-					</li>
-				
-				</ol>
-			</font>
-		    </p>
-				
-			
-		</div>
-	
-	<body>
+
+	</body>
+
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
+
+
+				<h1 class="title" align="center">Опушка</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						&nbsp;&nbsp;&nbsp;&nbsp;Вы вышли на опушку и рассматриваете местность. Вокруг по пояс травы, возможно здесь водятся змеи подумали вы. Также вас смутила тишина, внезапно обрушившаяся на ваши уши. И вдруг крик. "Папа, папа, спаси!"
+						<br>
+						<img src="./image/wolfs.jpg" title="Стая волков, это тебе не шутки!" class="container__image">
+						&nbsp;&nbsp;&nbsp;&nbsp;Вы видите своего сына возле стога сена. Его окружила стая волков, во главе с одноглазым, малость поседевшим, но очень свирепым волком. 
+
+					</p>
+				</div>
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./wolf_help.html">
+							<button type="submit" class="buttons__btn">
+								<span>Попытаться спасти сына</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+
+						<form class="buttons__form" action="./wolf_running.html">
+							<button type="submit" class="buttons__btn">
+								<span>Бежать</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
 
 </html>

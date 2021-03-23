@@ -3,56 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			Где-то в лесу
-		</title>
-	
-	</head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"> <b> Где-то в лесу </b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp; Вы решили осмотреть лес. Влажные листья и под ногами и петрикор шептали о том, что недавно прошел дождь. Вы прошли около 500 метров и не заметили овраг перед собой, поскольку загляделись на белок, которые собирали орешки на зиму. После падения у вас закружилась голова и вы забыли откуда пришли. Тьма окутала лес. Волки в лесу начали выть на Луну, но вдруг, вы видите силуэт медведя. И вы решаете...
-			<br>
-			<div align = "middle">
-				<img src = "./image/bear.png" height = "40%" width = "37%" title="Ну и страшная зверюга)"></img> </div>
-			<br>
-		
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-				&nbsp;&nbsp;&nbsp;
-				<font size = "4">
-			    <ol>
-				
-					<li> 
-						<a href = "./bear_running.html"> Бежать </a>
-					</li>
-					
-					<li>
-						<a href = "./bear_measuring.html"> Замереть </a>
-					</li>
-				
-				</ol>
-			</font>
-			 </p>
-				
-			
-		</div>
-	
-	<body>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>Где-то в лесу</title>
+
+</head>
+
+
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
+
+
+				<h1 class="title" align="center">Где-то в лесу</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						&nbsp;&nbsp;&nbsp;&nbsp;Вы решили осмотреть лес. Влажные листья и под ногами и петрикор шептали о том, что недавно прошел дождь. Вы прошли около 500 метров и не заметили овраг перед собой, поскольку загляделись на белок, которые собирали орешки на зиму. После падения у вас закружилась голова и вы забыли откуда пришли. Тьма окутала лес. Волки в лесу начали выть на Луну, но вдруг, вы видите силуэт медведя.
+						<br>
+						<img src="./image/bear.png" title="Ну и страшная зверюга)" class="container__image">
+						&nbsp;&nbsp;&nbsp;&nbsp;И вы решаете...					</p>
+				</div>
+
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./bear_running.html">
+							<button type="submit" class="buttons__btn">
+								<span>Бежать</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+
+						<form class="buttons__form" action="./bear_measuring.html">
+							<button type="submit" class="buttons__btn">
+								<span>Замереть</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
 
 </html>

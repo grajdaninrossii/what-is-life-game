@@ -3,54 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<title>
-			Голод не тетка
-		</title>
-	
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>
+		Голод не тетка
+	</title>
+
 </head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"> <b>Голод не тетка</b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp;Медведь вас заметил, но решил не нападать. Вы, простояв еще минут сорок, после того как хищник ушел, решили вернуться домой. Вы продлили по лесу около недели. Вы похудели на 20 кг, жира не осталось, лицо стало бледным и вытянутым. И вот на 8 день вы спотыкаетесь и умираете от голода.
-			<br>
-			<div align = "middle">
 
-				<img src = "./image/forest_landscape.jpg" height = "40%" width = "37%" title="Лес, опасное место однако"></img> 
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
 
 
-				<video width = "30%" height = "40%" controls = "controls" poster = "./image/ava_forest.jpg">
-					<source src = "./image/depths_of_the_forest.mp4" >
-				</video>
+				<h1 class="title" align="center">Голод не тетка</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						<img src="./image/forest_landscape.jpg" title="Вы, до чашки кофе с утра." class="container__image">
+						&nbsp;&nbsp;&nbsp;&nbsp;Медведь вас заметил, но решил не нападать. Вы, простояв еще минут сорок, после того как хищник ушел, решили вернуться домой. Вы продлили по лесу около недели. Вы похудели на 20 кг, жира не осталось, лицо стало бледным и вытянутым. И вот на 8 день вы спотыкаетесь и умираете от голода.
+					</p>
+				</div>
+
+
+				<div class="video">
+					<video class="video__player" controls="controls" poster="./image/ava_forest.jpg">
+						<source src = "./image/depths_of_the_forest.mp4" >
+					</video>
+				</div>
+
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./home.html">
+							<button type="submit" class="buttons__btn">
+								<span>Что дальше?</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
 			</div>
-			<br>
-		
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-				&nbsp;&nbsp;&nbsp;
-				<font size = "4">
-					<a href = "./home.html"> Что дальше? </a>
-			    </font>
-		    </p>
-				
-			
-		</div>
-	
-	<body>
+		</main>
+	</body>
 
 </html>

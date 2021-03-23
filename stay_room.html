@@ -3,65 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Размышления</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>Размышления</title>
 </head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"> <b>Труп лесника</b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp;Получше осмотрев комнату, вы увидели труп хозяина дома. Он лежал в углу комнаты со светильником возле левой руки. Это был мужчина, лет 50, без двух пальцев на левой руке, с седеющей бородой. Он умер недавно, поэтому вселял в вас немного страха.
-			<br>
-			&nbsp;Также вы решили осмотреть кухонную часть получше. Вы нашли много пыли, паутины и... Консерву. Тут же, вы поняли, что сильно голодны.
 
-			<br>
-			<div align = "middle">
-				<img src = "./image/forester.png" height = "40%" width = "37%" title="Да, я с копипастил))"></img>
-					
-			</div>
-			<div align = "middle">
-				<audio autoplay controls>
-					    <source src="./image/Dark_Ambient.mp3" type="audio/mpeg">
-				</audio>
-			</div>
-			<br>
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-				<font size = "4">
-			    <ol>
-				
-					<li> 
-						<a href = "./basement.html"> Заглянуть в подвал </a>
-					</li>
-					
-					<li>
-						<a href = "./in_forest.html">  Выйти в лес  </a>
-					</li>
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
 
-					<li>
-						<a href = "./room_died.html">  Попытаться открыть консерву  </a>
-					</li>
-				
-				</ol>
-			</font>
-		    </p>
-				
-			
-		</div>
-	
-	<body>
+
+				<h1 class="title" align="center">Труп лесника</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						&nbsp;&nbsp;&nbsp;&nbsp;Получше осмотрев комнату, вы увидели труп хозяина дома. Он лежал в углу комнаты со светильником возле левой руки. Это был мужчина, лет 50, без двух пальцев на левой руке, с седеющей бородой. Он умер недавно, поэтому вселял в вас немного страха.
+						<br>
+						<img src="./image/forester.png" title="Да, зе лонг дарк топ" class="container__image">
+						&nbsp;&nbsp;&nbsp;&nbsp;Также вы решили осмотреть кухонную часть получше. Вы нашли много пыли, паутины и... Консерву. Тут же, вы поняли, что сильно голодны.
+					</p>
+				</div>
+
+
+				<div class="audio">
+					<audio class="audio__track" controls autoplay>
+						<source src="./image/Dark_Ambient.mp3">
+					</audio>
+				</div>
+
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./basement.html">
+							<button type="submit" class="buttons__btn">
+								<span>Заглянуть в подвал</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+
+						<form class="buttons__form" action="./in_forest.html">
+							<button type="submit" class="buttons__btn">
+								<span>Выйти в лес</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+
+						<form class="buttons__form" action="./room_died.html">
+							<button type="submit" class="buttons__btn">
+								<span>Попытаться открыть консерву</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
 
 </html>

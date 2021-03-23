@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-attachment: fixed;
+	background-color: #fff;
+	background-size: cover;
+}
+
+.main {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}
+.main__slide {
+	width: 100%;
+ 	max-width: 740px;
+ 	background-color: rgba(255, 255, 255, 0.85);
+ 	padding: 20px;
+ 	margin: 80px 0;
+ 	box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.86);
+}
+
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-family: "Forum", sans-serif;
+  font-weight: bold;
+	font-size: 40px;
+	color: rgb(150, 0, 50);
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.container__text {
+	position: relative;
+	font-family: "Forum", sans-serif;
+	margin-bottom: 40px;
+	color: #000;
+  font-size: 25px;
+}
+.container__image {
+	max-height: 360px;
+	width: 100%;
+	max-width: 740px;
+  margin: 40px auto;
+	border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	object-fit: cover;
+}
+
+.audio {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.audio__track {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.video__player {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 100%;
+}
+.buttons__wrapper {
+  width: 100%;
+}
+.buttons__name {
+	font-family: "Forum", sans-serif;
+  font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 20px;
+}
+.buttons__form {
+  width: 100%;
+}
+.buttons__btn {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 8px 0 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  opacity: 1;
+  z-index: 3;
+}
+.buttons__btn::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(150, 0, 50) 100%);
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  transition: 0.4s;
+  z-index: 4;
+  opacity: 0;
+}
+.buttons__btn:hover::after {
+  opacity: 1;
+}
+.buttons__btn > span {
+  font-family: 'Caveat', cursive;
+  height: 0px;
+  line-height: 0px;
+  margin-top: -6px;
+  font-size: 30px;
+  text-transform: lowercase;
+  z-index: 5;
+}
+.buttons__btn > img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  z-index: 5;
+}

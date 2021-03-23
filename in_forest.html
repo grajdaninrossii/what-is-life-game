@@ -3,63 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			Выход в лес
-		</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>
+		Выход в лес
+	</title>
 </head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"> <b>Лес</b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp;Вы вышли на улицу. Здесь достаточно тепло, сильно влажно, дует легкий ветер. Перед вами лес в первозданном виде. Также вы видите опушку, до которой не так уж и много идти.
-			<br>
-			<div align = "middle">
-				<img src = "./image/forest_opushka.jpg" height = "40%" width = "37%" title="Опушка, круто"></img>
+
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
+
+
+				<h1 class="title" align="center">Лес</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						&nbsp;Вы вышли на улицу. Здесь достаточно тепло, сильно влажно, дует легкий ветер. Перед вами лес в первозданном виде. Также вы видите опушку, до которой не так уж и много идти.
+						<br>
+						<img src="./image/forest_opushka.jpg" title="Опушка, круто." class="container__image">
+					</p>
+				</div>
+
+
+				<div class="audio">
+					<audio class="audio__track" controls autoplay>
+						<source src="./image/forest.mp3">
+					</audio>
+				</div>
+
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./the_edge_of_the_forest.html">
+							<button type="submit" class="buttons__btn">
+								<span>Выйти на опушку</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+
+						<form class="buttons__form" action="./deep_in_the_forest.html">
+							<button type="submit" class="buttons__btn">
+								<span>Зайти в глубь леса</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
 			</div>
-			<div align = "middle">
-				<audio autoplay="autoplay" controls>
-					    <source src="./image/forest.mp3" type="audio/mpeg">
-				</audio>
-			</div>
+		</main>
+	</body>
 
 
-
-			<br>
-		
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-				<font size = "4">
-			    <ol>
-				
-					<li> 
-						<a href = "./the_edge_of_the_forest.html"> Выйти на опушку </a>
-					</li>
-					
-					<li>
-						<a href = "./deep_in_the_forest.html"> Зайти в глубь леса </a>
-					</li>
-				
-				</ol>
-			</font>
-		    </p>
-				
-			
-		</div>
-	
-	<body>
 
 </html>

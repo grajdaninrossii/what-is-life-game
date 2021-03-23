@@ -3,45 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			 Вход в подземелье 
-		</title>
-	
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Forum&display=swap" rel="stylesheet"> 
+	<title>
+		Вход в подземелье
+	</title>
+
 </head>
-	
-	<body>
-		
-		
-		<p align = "center">
-		
-			<font size = "6"><b> Вход в подземелье  </b></font>
-		
-		</p>
-		<p align = "justify">
-		
-			&nbsp;Вы спустились в подвал. Здесь вы слышите, как бегают и пищат крысы, видите много паутины и больших, с кривыми ногами пауков и вдруг замечаете проход, проход, который вас манит, зовет к себе. Также вы заметили, что люк в подвал захлопнулся из-за вашей рассеянности. Вам остается идти только вперед.
-			<br>
-			<div align = "middle">
-				<img src = "./image/entrance_to_the_dungeon.jpg" height = "40%" width = "37%" title="Ухх, тонель"></img> </div>
-		
-		</p>
-		
-		<div>
-			<p>
-				<font size = "6">
-					<b>
-						Возможности перехода:
-					</b>
-				</font>
-		    
-		    <font size = "4">
-						<a href = "./town.html"> Войти в подземелье </a>
-			</font>
-			</p>
-				
-			
-		</div>
-	
-	<body>
+
+	<body background="./background/lodka-ozero-derevo-vetvi.jpg">
+		<main class="main">
+			<div class="main__slide">
+
+
+				<h1 class="title" align="center">Вход в подземелье</h1>
+
+
+				<div class="container">
+					<p class="container__text">
+						&nbsp;&nbsp;&nbsp;&nbsp;Вы спустились в подвал. Здесь вы слышите, как бегают и пищат крысы, видите много паутины и больших, с кривыми ногами пауков и вдруг замечаете проход, проход, который вас манит, зовет к себе. Также вы заметили, что люк в подвал захлопнулся из-за вашей рассеянности. Вам остается идти только вперед.
+						<br>
+						<img src="./image/entrance_to_the_dungeon.jpg" title="Темно как в одном месте..." class="container__image">
+					</p>
+				</div>
+
+
+				<div class="buttons">
+					<span class="buttons__name">Возможности перехода:</span>
+					<div class="buttons__wrapper">
+						<form class="buttons__form" action="./town.html">
+							<button type="submit" class="buttons__btn">
+								<span>Спуститься в подземелье</span>
+								<img src="./background/png-transparent-hand-silhouette-fingers-photography-people-handshake.svg">
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
 
 </html>
