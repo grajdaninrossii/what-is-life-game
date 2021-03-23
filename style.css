@@ -19,7 +19,7 @@ body {
 .main__slide {
 	width: 100%;
  	max-width: 740px;
- 	background-color: rgba(255, 255, 255, 0.85);
+ 	background-color: rgba(255, 255, 255, 0.83);
  	padding: 20px;
  	margin: 80px 0;
  	box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.86);
