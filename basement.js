@@ -16,7 +16,6 @@ class Lamps {
     this.srcON = srcON
     this.srcOFF = srcOFF
 
-
       this.game.innerHTML = `
         <div class="game__wrapper">
           <div class="lamp">
@@ -143,7 +142,7 @@ class Lamps {
     id: 'game',
     delay: 10000,
     lampTime: 400,
-    textWin: 'Иван попал в объятья темноты коварного тоннеля',
+    textWin: 'Иван попал в объятья темноты',
     textLose: 'Спустя две недели Иван засыпает.',
     hrefLose: 'home.html'
   })
