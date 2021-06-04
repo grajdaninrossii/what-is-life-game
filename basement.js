@@ -9,23 +9,25 @@ class Lamps {
   srcON;
   srcOFF;
   counter = 5;
+  check = false;
 
   constructor({srcON, srcOFF, id, delay, lampTime, textWin, textLose, hrefLose}) {
     this.game = document.querySelector(`#${id}`)
     this.srcON = srcON
     this.srcOFF = srcOFF
 
-    this.game.innerHTML = `
-      <div class="game__wrapper">
-        <div class="lamp">
-          <img class="lamp__img" src="${srcOFF}">
-          <img class="lamp__img" src="${srcOFF}">
-          <img class="lamp__img" src="${srcOFF}">
-          <img class="lamp__img" src="${srcOFF}">
-          <img class="lamp__img" src="${srcOFF}">
+
+      this.game.innerHTML = `
+        <div class="game__wrapper">
+          <div class="lamp">
+            <img class="lamp__img" src="${srcOFF}">
+            <img class="lamp__img" src="${srcOFF}">
+            <img class="lamp__img" src="${srcOFF}">
+            <img class="lamp__img" src="${srcOFF}">
+            <img class="lamp__img" src="${srcOFF}">
+          </div>
         </div>
-      </div>
-    `
+      `
 
     this.lamps = this.game.querySelectorAll('.lamp__img')
     this.listeners({lampTime, textWin, textLose, hrefLose})
@@ -35,6 +37,7 @@ class Lamps {
 
 
   listeners({lampTime, textWin, textLose, hrefLose}) {
+    this.check = false;
     this.lamps.forEach((el, i) => {
       el.addEventListener('click', () => {
         if(this.counter) {
@@ -113,15 +116,20 @@ class Lamps {
     if(isWin) {
       lamp.classList.add('lamp_win')
       lamp.insertAdjacentHTML('beforeend', `
-        <span class="lamp__alert lamp__alert_win">${text}</span>
+        <span class="lamp__alert lamp__alert_win">
+        Дверь отворилась...
+        ${text}</span>
       `)
     }
     else {
       lamp.classList.add('lamp_lose')
       lamp.insertAdjacentHTML('beforeend', `
         <div class="lamp__alert">
-          <span>${text}</span>
-          <a href="${href}">Заново</a>
+          <span>
+          Дверь не открылась...
+          ${text}
+          </span>
+          <a href="${href}">Что дальше?</a>
         </div>
       `)
     }
@@ -129,19 +137,16 @@ class Lamps {
 }
 
 
-
-
-
-let lamps = new Lamps({
-  srcON: 'lamp_on.png',
-  srcOFF: 'lamp_off.png',
-  id: 'game',
-  delay: 3000,
-  lampTime: 400,
-  textWin: 'Выигрыш',
-  textLose: 'Проигрыш',
-  hrefLose: 'index.html'
-})
+  let lamps = new Lamps({
+    srcON: 'lamp_on.png',
+    srcOFF: 'lamp_off.png',
+    id: 'game',
+    delay: 10000,
+    lampTime: 400,
+    textWin: 'Иван попал в объятья темноты коварного тоннеля',
+    textLose: 'Спустя две недели Иван засыпает.',
+    hrefLose: 'home.html'
+  })
 
 
 
